@@ -9,6 +9,25 @@ body {
   padding: 0; /* Remove default padding to ensure consistent layout */
 }
 
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+  background-image: linear-gradient(to right, #888, #fff, #888); 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; 
+}
+
 /* Header styles */
 .header {
   display: flex;
@@ -20,19 +39,6 @@ body {
 
 .logo {
   display: flex;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center; /* Center align items vertically */
-}
-
-.search-bar input[type="text"] {
-  padding: 8px; /* Increase padding for better input field appearance */
-  border: 1px solid #a37e7e; /* Add a border for input field */
-  border-radius: 1px; /* Add border radius for input field */
-  outline: none; /* Remove the outline when focused */
-  width: 300px; /* Adjust the width as needed */
 }
 
 .buttons {
@@ -133,6 +139,9 @@ body {
   width: 450px;
   border: none;
   font-size: 18px;
+}
+.search-bar{
+  display: flex;
 }
 .search-bar input[type="text"] {
   padding: 8px 20px;
