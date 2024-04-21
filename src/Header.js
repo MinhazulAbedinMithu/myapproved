@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FaMoon } from "react-icons/fa6";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -18,19 +19,19 @@ const Header = () => {
       <div className="flex flex-col items-center">
       <div className="buttons pt-2">
         <div className="dropdown">
-          <button className="bordered">Menu 1 &#9660;</button>
+          <button className="bordered">Trade &#9660;</button>
           <div className="dropdown-content">
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
+            <a className="text-sm" href="#">Log In</a>
+            <a className="text-sm" href="#">Create A New Account</a>
           </div>
         </div>
         <div className="dropdown">
-          <button className="bordered">Menu 2 &#9660;</button>
+          <button className="bordered">Client &#9660;</button>
           <div className="dropdown-content">
-            <a href="#">Option A</a>
-            <a href="#">Option B</a>
-            <a href="#">Option C</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <hr />
+            <a href="#">Night Mode <FaMoon /></a>
           </div>
         </div>
         <div className="dropdown">

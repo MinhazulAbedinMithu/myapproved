@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DotAnimation from './DotAnimation';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { RiMessage2Line } from 'react-icons/ri';
 import { FiPhone } from 'react-icons/fi';
 
@@ -37,6 +37,12 @@ const Footer = () => {
           </div>
       <p className='flex gap-2 items-center text-sm my-2'><RiMessage2Line className='text-yellow' /> customercare@myapproved.co.uk</p>
       <p className='flex gap-2 items-center text-sm'><FiPhone className='text-yellow' /> +074 769 92213</p>
+      <div className='flex gap-2 mt-6'>
+      <p className='p-2 bg-black'><FaTwitter className="text-white text-lg" /></p>
+      <p className='p-2 bg-black'><FaFacebookF className="text-white text-lg" /></p>
+      <p className='p-2 bg-black'><FaLinkedinIn className="text-white text-lg" /></p>
+      <p className='p-2 bg-black'><FaInstagram className="text-white text-lg" /></p>
+      </div>
     </div>
     <div>
       <h2 className='text-3xl font-bold ms-4'>Quick Links</h2>
