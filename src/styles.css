@@ -172,14 +172,30 @@ body {
   animation: moveDot 8s linear infinite;
 }
 
+.slide{
+  width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 30px 20px 30px;
+  background-color: #eef9ff; /* Example background color */
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.281);
+}
+
+.active-slide {
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.25);
+  background-color: #ffffff; /* Example background color */
+}
+
 .custom-controls {
   display: flex;
   justify-content: center;
 }
 
 .control-box {
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: #ccc; /* Grey background color */
   margin: 0 5px; /* Add spacing between control boxes */
   cursor: pointer; /* Change cursor to pointer on hover */
@@ -188,7 +204,7 @@ body {
 /* Style the control boxes when active */
 .control-box.active {
   background-color: #ffbe17; 
-  width: 30px;
+  width: 20px;
 }
 .about-us {
   display: flex;
@@ -196,28 +212,22 @@ body {
   align-items: center;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-}
-
-.card {
-  flex: 1;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 5px;
-  margin-right: 20px;
-}
-
 .image-card {
-  flex: 1;
-  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .image-card img {
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover img {
+  transform: scale(1.1);
 }
 
 .image-text {

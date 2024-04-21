@@ -6,6 +6,7 @@ module.exports = {
       backgroundColor: {
         'yellow-bg': '#ffbe17',
         'gray-bg': '#f0f0f0',
+        'sky-bg': '#eef9ff'
       },
       colors: {
         'dark-text': '#091E3E',
