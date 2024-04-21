@@ -6,7 +6,7 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <header className="header md:px-24 px-4 pb-2">
+    <header className="header flex items-start justify-between md:px-24 px-4 pb-2">
       <div className="logo">
           <img
             src="https://i.postimg.cc/13JvwsDs/Myapproved-logo.png"

@@ -30,9 +30,6 @@ body {
 
 /* Header styles */
 .header {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
   background-color: #eef9ff;
   color: #000; /* Change text color for better contrast */
 }

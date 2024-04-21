@@ -48,7 +48,7 @@ const Services = () => {
             Explore Our Trending <br /> Categories
           </h2>
           <div className="w-36">
-            <DotAnimation />
+            <DotAnimation value={1.5} />
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@ const Services = () => {
           </div>
         </div>
         <div className="w-36">
-          <DotAnimation />
+          <DotAnimation value={1.5} />
         </div>
       </div>
     </div>
