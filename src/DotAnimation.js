@@ -1,11 +1,11 @@
 import React from "react";
 
-const DotAnimation = ({value}) => {
+const DotAnimation = ({ height = "h-1", width = "w-1" }) => {
   return (
-    <div class={`relative w-full h-${value} bg-yellow-bg`}>
+    <div class={`relative w-full  bg-yellow-bg ${height}`}>
       <div
         id="moving-dot"
-        class={`absolute top-0 left-0 w-${value} h-${value} bg-white animate-move-dot`}
+        class={`absolute top-0 left-0 ${width} ${height} bg-white animate-move-dot`}
       ></div>
     </div>
   );

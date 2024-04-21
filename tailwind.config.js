@@ -9,9 +9,10 @@ module.exports = {
         "sky-bg": "#eef9ff",
       },
       colors: {
-        'dark': "#091E3E",
-        'yellow': "#ffbe17",
-        'dark-blue': '#061429'
+        dark: "#091E3E",
+        yellow: "#ffbe17",
+        "dark-blue": "#061429",
+        "2nd-dark-blue": "rgb(0, 88, 162)",
       },
     },
   },

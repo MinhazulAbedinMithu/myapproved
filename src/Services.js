@@ -48,7 +48,7 @@ const Services = () => {
             Explore Our Trending <br /> Categories
           </h2>
           <div className="w-36">
-            <DotAnimation value={1.5} />
+            <DotAnimation height={"h-1.5"} width={"w-1.5"} />
           </div>
         </div>
       </div>
