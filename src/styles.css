@@ -285,24 +285,6 @@ body {
   margin-bottom: 10px;
 }
 
-.newsletter {
-  display: flex;
-}
-
-.newsletter input {
-  flex: 1;
-  padding: 8px;
-  margin-right: 10px;
-}
-
-.newsletter button {
-  padding: 8px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
 ul {
   list-style-type: none;
   padding: 0;

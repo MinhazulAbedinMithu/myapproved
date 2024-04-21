@@ -4,15 +4,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'yellow-bg': '#ffbe17',
-        'gray-bg': '#f0f0f0',
-        'sky-bg': '#eef9ff'
+        "yellow-bg": "#ffbe17",
+        "gray-bg": "#f0f0f0",
+        "sky-bg": "#eef9ff",
       },
       colors: {
-        'dark-text': '#091E3E',
-        'yellow': '#ffbe17',
+        'dark': "#091E3E",
+        'yellow': "#ffbe17",
+        'dark-blue': '#061429'
       },
     },
   },
-  plugins:  [],
-}
+  plugins: [],
+};
