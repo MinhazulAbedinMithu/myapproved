@@ -45,21 +45,22 @@ body {
 
 .buttons button {
   margin-right: 10px;
-  padding: 8px 16px; /* Add padding to buttons for better clickability */
+  padding: 14px 6px; /* Add padding to buttons for better clickability */
   background-color: transparent;
   border: 1px solid #000; /* Add border to buttons for better visibility */
+  border-radius: 5px;
   color: #000;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
 }
 
 .buttons button.yellow {
-  background-color: yellow;
-  border-color: transparent; /* Change border color to transparent for yellow button */
+  background-color: #ffc107;
+  border: 1px solid #ffc107; /* Change border color to transparent for yellow button */
 }
 
 .buttons button:hover {
-  background-color: #f0f0f0; /* Change background color on hover for better feedback */
+  background-color: transparent; /* Change background color on hover for better feedback */
 }
 
 /* Dropdown styles */

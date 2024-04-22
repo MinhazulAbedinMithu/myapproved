@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaMoon } from "react-icons/fa6";
-import { FaSearch, FaBars } from "react-icons/fa";
+import { FaSearch, FaBars, FaCaretDown } from "react-icons/fa";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -22,8 +22,8 @@ const Header = () => {
         >
           <FaBars />
         </button>
-        <div className="hidden md:flex items-start gap-4 justify-end">
-          <div className="flex items-center justify-start gap-2 mt-2 rounded-lg bg-white py-2 px-2">
+        <div className="hidden md:flex items-start gap-4 justify-between w-full">
+          <div className="flex items-center justify-start gap-2 mt-2 rounded-lg bg-white py-2 px-2 md:w-1/2 md:ms-20">
             <FaSearch className="text-gray-500" />
             <input
               type="text"
@@ -34,7 +34,7 @@ const Header = () => {
           <div className="flex flex-col items-center">
             <div className="buttons pt-2">
               <div className="dropdown">
-                <button className="bordered">Trade &#9660;</button>
+                <button className="flex items-center text-sm gap-1 font-bold">Trade <FaCaretDown className="text-xs text-gray-600" /></button>
                 <div className="dropdown-content">
                   <a className="text-sm" href="#">
                     Log In
@@ -45,7 +45,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="dropdown">
-                <button className="bordered">Client &#9660;</button>
+                <button className="flex items-center text-sm gap-1 font-bold">Client <FaCaretDown className="text-xs text-gray-600" /></button>
                 <div className="dropdown-content">
                   <a href="#">Login</a>
                   <a href="#">Register</a>
@@ -56,7 +56,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="dropdown">
-                <button className="yellow">Language &#9660;</button>
+                <button className="yellow flex items-center text-sm gap-1 font-bold">Language  <FaCaretDown className="text-xs text-gray-600" /></button>
                 <div className="dropdown-content">
                   <a href="#">English</a>
                   <a href="#">Spanish</a>
