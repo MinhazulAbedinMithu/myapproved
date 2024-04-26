@@ -13,6 +13,11 @@ body {
   width: 8px;
 }
 
+/* google translate  */
+#google_translate_element * :not("#:0.targetLanguage") {
+  display: none;
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
   background-image: linear-gradient(to right, #888, #fff, #888);
